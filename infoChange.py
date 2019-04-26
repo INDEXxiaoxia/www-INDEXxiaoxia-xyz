@@ -1,4 +1,7 @@
 def infoC_Views(request):
+	'''
+	修改信息，临时
+	'''
 	userid=request.session[user]
 	ThisUser=User.Object.filter(userid=userid)
 	if request.meth==['POST']:
@@ -19,6 +22,9 @@ def infoC_Views(request):
 {{ ThisUser.pwd }}
 {{ ThisUser.Email }}
 def Card_Library_Views(request):
+	'''
+	牌库查看，临时
+	'''
 	cardList=TaroLibrary.Object.filter()
 	cardList=[card for card in cardList]
 	# 整合url和对象
